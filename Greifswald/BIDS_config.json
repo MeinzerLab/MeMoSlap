@@ -1,0 +1,302 @@
+{
+    "descriptions": [
+        {
+            "_comment": "0",
+            "datatype": "fmap",
+            "suffix": "dir-PA_epi",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-resting_dir-PA_epi"
+            },
+            "intendedFor": 2,
+            "sidecar_changes": {
+                "TaskName": "rest",
+                "IntendedFor": [
+                    "resting_dir-AP_bold",
+                    "resting_dir-PA_sbref",
+                    "resting_dir-AP_sbref"
+                ]
+            }
+        },
+        {
+            "_comment": "1",
+            "datatype": "func",
+            "suffix": "task-resting_dir-PA_sbref",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-resting_dir-PA_epi_SBRef"
+            },
+            "sidecar_changes": {
+                "TaskName": "rest"
+            },
+            "id": "resting_dir-PA_sbref"
+        },
+        {
+            "_comment": "2",
+            "datatype": "func",
+            "suffix": "task-resting_dir-AP_bold",
+            "criteria": {
+                "SeriesDescription": "*baseline_task-resting_dir-AP_bold"
+            },
+            "sidecar_changes": {
+                "TaskName": "rest"
+            },
+            "id": "resting_dir-AP_bold"
+        },
+        {
+            "_comment": "3",
+            "datatype": "func",
+            "suffix": "task-resting_dir-AP_sbref",
+            "criteria": {
+                "SeriesDescription": "*baseline_task-resting_dir-AP_bold_SBRef"
+            },
+            "sidecar_changes": {
+                "TaskName": "rest"
+            },
+            "id": "resting_dir-AP_sbref"
+        },
+        {
+            "_comment": "4",
+            "datatype": "anat",
+            "suffix": "acq-mprage_T1w",
+            "criteria": {
+                "SeriesDescription": "*acq-mprage_T1w"
+            }
+        },
+        {
+            "_comment": "5",
+            "datatype": "anat",
+            "suffix": "acq-space_T2w",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-space_T2w"
+            }
+        },
+        {
+            "_comment": "6",
+            "datatype": "anat",
+            "suffix": "FLAIR",
+            "criteria": {
+                "SeriesDescription": "*FLAIR*"
+            }
+        },
+        {
+            "_comment": "7",
+            "datatype": "anat",
+            "suffix": "acq-petra_PDw",
+            "criteria": {
+                "SeriesDescription": "*acq-petra_PDw"
+            }
+        },
+        {
+            "_comment": "8",
+            "datatype": "dwi",
+            "suffix": "acq-NODDI_dir-PA_sbref",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-NODDI_dir-PA_epi_SBRef"
+            }
+        },
+        {
+            "_comment": "9",
+            "datatype": "fmap",
+            "suffix": "acq-NODDI_dir-PA_epi",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-NODDI_dir-PA_epi"
+            },
+            "sidecar_changes": {
+                "IntendedFor": "NODDI_dwi"
+            }
+        },
+        {
+            "_comment": "10",
+            "datatype": "dwi",
+            "suffix": "acq-NODDI_dir-AP_sbref",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-NODDI_dir-AP_dwi_SBRef"
+            }
+        },
+        {
+            "_comment": "11",
+            "datatype": "dwi",
+            "suffix": "acq-NODDI_dir-AP_dwi",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-NODDI_dir-AP_dwi"
+            },
+            "id": "NODDI_dwi"
+        },
+        {
+            "_comment": "12",
+            "datatype": "fmap",
+            "suffix": "RB1map",
+            "criteria": {
+                "SeriesDescription": "*rf_map*"
+            }
+        },
+        {
+            "_comment": "13",
+            "datatype": "fmap",
+            "suffix": "acq-head_RB1COR",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-head_RB1COR"
+            }
+        },
+        {
+            "_comment": "14",
+            "datatype": "fmap",
+            "suffix": "acq-body_RB1COR",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-body_RB1COR"
+            }
+        },
+        {
+            "_comment": "15",
+            "datatype": "anat",
+            "suffix": "acq-headT1w_flip-1_mt-on_MPM",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-headT1w*"
+            }
+        },
+        {
+            "_comment": "16",
+            "datatype": "anat",
+            "suffix": "acq-headPDw_flip-1_mt-off_MPM",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-headPDw*"
+            }
+        },
+        {
+            "_comment": "17",
+            "datatype": "anat",
+            "suffix": "acq-headMTw_flip-1_mt-on_MPM",
+            "criteria": {
+                "SeriesDescription": "*baseline_acq-headMTw*"
+            }
+        },
+        {
+            "_comment": "18",
+            "datatype": "fmap",
+            "suffix": "dir-PA_epi",
+            "criteria": {
+                "SeriesDescription": "*expRest_acq-resting_dir-PA_epi"
+            },
+            "sidecar_changes": {
+                "TaskName": "rest",
+                "IntendedFor": [
+                    "resting_dir-PA_sbref",
+                    "resting_run-01_dir-AP_bold",
+                    "resting_run-01_dir-AP_sbref",
+                    "resting_run-02_dir-AP_bold",
+                    "resting_run-02_dir-AP_sbref"
+                ]
+            }
+        },
+        {
+            "_comment": "19",
+            "datatype": "func",
+            "suffix": "task-resting_dir-PA_sbref",
+            "criteria": {},
+            "sidecar_changes": {
+                "TaskName": "rest",
+                "SeriesDescription": "*expRest_acq-resting_dir-PA_epi_SBRef"
+            },
+            "id": "resting_dir-PA_sbref"
+        },
+        {
+            "_comment": "20",
+            "datatype": "func",
+            "suffix": "task-resting_run-01_dir-AP_bold",
+            "criteria": {
+                "SeriesDescription": "*expRest_task-resting_run-01_dir-AP_bold"
+            },
+            "id": "resting_run-01_dir-AP_bold",
+            "sidecar_changes": {
+                "TaskName": "rest"
+            }
+        },
+        {
+            "_comment": "21",
+            "datatype": "func",
+            "suffix": "task-resting_run-01_dir-AP_sbref",
+            "criteria": {
+                "SeriesDescription": "*expRest_task-resting_run-01_dir-AP_bold_SBRef"
+            },
+            "id": "resting_run-01_dir-AP_sbref",
+            "sidecar_changes": {
+                "TaskName": "rest"
+            }
+        },
+        {
+            "_comment": "22",
+            "datatype": "func",
+            "suffix": "task-resting_run-02_dir-AP_bold",
+            "criteria": {
+                "SeriesDescription": "*expRest_task-resting_run-02_dir-AP_bold"
+            },
+            "id": "resting_run-02_dir-AP_bold",
+            "sidecar_changes": {
+                "TaskName": "rest"
+            }
+        },
+        {
+            "_comment": "23",
+            "datatype": "func",
+            "suffix": "task-resting_run-02_dir-AP_sbref",
+            "criteria": {
+                "SeriesDescription": "*expRest_task-resting_run-02_dir-AP_bold_SBRef"
+            },
+            "id": "resting_run-02_dir-AP_sbref",
+            "sidecar_changes": {
+                "TaskName": "rest"
+            }
+        },
+        {
+            "_comment": "24",
+            "datatype": "fmap",
+            "suffix": "dir-PA_epi",
+            "criteria": {
+                "SeriesDescription": "*expTask_acq-resting_dir-PA_epi"
+            },
+            "sidecar_changes": {
+                "TaskName": "learning",
+                "IntendedFor": [
+                    "learning_dir-PA_sbref",
+                    "learning_dir-AP_bold",
+                    "learning_dir-AP_sbref"
+                ]
+            }
+        },
+        {
+            "_comment": "25",
+            "datatype": "func",
+            "suffix": "task-learning_dir-PA_sbref",
+            "criteria": {
+                "SeriesDescription": "*expTask_acq-resting_dir-PA_epi_SBRef"
+            },
+            "sidecar_changes": {
+                "TaskName": "learning"
+            },
+            "id": "learning_dir-PA_sbref"
+        },
+        {
+            "_comment": "26",
+            "datatype": "func",
+            "suffix": "task-learning_dir-AP_bold",
+            "criteria": {
+                "SeriesDescription": "*expTask_task-resting_run-01_dir-AP_bold"
+            },
+            "sidecar_changes": {
+                "TaskName": "learning"
+            },
+            "id": "learning_dir-AP_bold"
+        },
+        {
+            "_comment": "27",
+            "datatype": "func",
+            "suffix": "task-learning_dir-AP_sbref",
+            "criteria": {
+                "SeriesDescription": "*expTask_task-resting_run-01_dir-AP_bold_SBRef"
+            },
+            "sidecar_changes": {
+                "TaskName": "learning"
+            },
+            "id": "learning_dir-AP_sbref"
+        }
+    ]
+}
