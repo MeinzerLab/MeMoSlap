@@ -1,7 +1,7 @@
 ## Prerequisits
 
 1. [Docker-Setup](./docker.md)
-2. [BIDS-Validator-Setup](./bids_validator)
+2. [BIDS-Validator-Setup](./bids_validator.md)
 3. Dcm2Bids version 3.0.1 (e.g., [via Docker](https://hub.docker.com/r/unfmontreal/dcm2bids) or in a python environment )
 4. The local Greifswald files: [../Greifswald/BIDS_config.json](../Greifswald/BIDS_config.json) & [../Greifswald/dicomtoBIDS3.py](../Greifswald/dicomtoBIDS3.py)
 
