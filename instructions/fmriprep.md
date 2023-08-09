@@ -23,3 +23,21 @@ fmriprep-docker <input-dir> <output-directory> \
 ```
 
 - There is an example Script in [.Greifswald/fmriprep.sh](./Greifswald/fmriprep.sh)
+
+## Troubleshooting
+
+fmriprep depends on freesurfer [freesurfer install](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
+
+- if your terminal doesn't show the right freesurfer path look at your bashr
+
+```bash
+nano ~/ .bashrc
+```
+
+- add the following lines to the end of the script
+  
+```bash
+export FREESURFER_HOME="/usr/local/freesurfer/7.4.1"
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+export FS_LICENSE=$FREESURFER_HOME/license.txt
+```
