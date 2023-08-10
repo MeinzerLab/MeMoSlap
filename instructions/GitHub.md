@@ -36,7 +36,13 @@ git clone https://github.com/MeinzerLab/MeMoSlap
 - go to path where *.deb is saved
 
 ```bash
-sudo dpkg -i *.deb
+sudo dpkg -i name_of_file.deb
+```
+
+- [configure after installation](https://www.baeldung.com/ops/git-configure-credentials)
+
+```bash
+git-credential-manager configure
 ```
 
 #### use gcm
@@ -54,6 +60,12 @@ gpg --gen-key
 
 ```bash
 pass init <gpg-id>
+```
+
+run
+
+```bash
+git config --global credential.credentialStore gpg
 ```
 
 - add user as global user
@@ -81,4 +93,13 @@ git commit -a -m "whatever you have done"
 
 ```bash
 git push
+```
+
+### Add file to repositor which was not there befor
+
+- create a new file and change director to file path
+-create a new file say GitHub.md and add it to repository via
+
+```bash
+git add Github.md
 ```
