@@ -22,7 +22,7 @@ fmriprep-docker <input-dir> <output-directory> \
     # NOTE: Instead of the --no-submm-recon flag we could also crop the FOV
 ```
 
-- There is an example Script in [.Greifswald/fmriprep.sh](./Greifswald/fmriprep.sh)
+- There is an example Script in [./Greifswald/fmriprep.sh](./Greifswald/fmriprep.sh)
 
 ## Troubleshooting
 
