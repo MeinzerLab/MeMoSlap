@@ -28,10 +28,10 @@ fmriprep-docker <input-dir> <output-directory> \
 
 fmriprep depends on freesurfer [freesurfer install](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
 
-- if your terminal doesn't show the right freesurfer path look at your bashr
+- if your terminal doesn't show the right freesurfer path look at your `.bashr`
 
 ```bash
-nano ~/ .bashrc
+nano ~/.bashrc
 ```
 
 - add the following lines to the end of the script
