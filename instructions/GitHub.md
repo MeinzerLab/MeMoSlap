@@ -77,10 +77,10 @@ git config --global user.name "user name"
 
 ## commit changes
 
-- to track changes in file, say "title is changed in file", let's say in GiHub.md
+- to track changes in file, say "title is changed in file", let's say in GitHub.md
 
 ```bash
-git commit fmriprep.md -m "title is changed in file"
+git commit GitHub.md -m "title is changed in file"
 ```
 
 - If you changed many files you can use also
@@ -95,9 +95,9 @@ git commit -a -m "whatever you have done"
 git push
 ```
 
-### Add file to repositor which was not there befor
+### Add file to repository which was not there before
 
-- create a new file and change director to file path
+- create a new file and change directory to file path
 -create a new file say GitHub.md and add it to repository via
 
 ```bash
