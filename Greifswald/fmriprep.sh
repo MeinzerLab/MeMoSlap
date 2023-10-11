@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# if you got any errors have a look in the instructions/fmriprep.md for help
+
 bids_root_dir="/media/Data02/MeMoSlap/fmriprep/bids"
 cpus=16 # NOTE: single subject run is recommended and more than 16 cpus do not increase performance
 allsbjs=$(find ${bids_root_dir}/sub* -maxdepth 0 -exec basename {} \;)
@@ -23,7 +25,9 @@ for sbj in "${sbjs[@]}"; do
     fmriprep-docker $bids_root_dir "$bids_root_dir/derivatives/fmriprep/$sbj" \
     participant --participant-label "$sbj" \
     --n_cpus $cpus \
+    --use-aroma \
     --no-submm-recon # BUG: otherwise recon all error,
     # NOTE: Instead of the --no-submm-recon flag we could also crop the FOV
+    #--skip_bids_validation  # use if bids validator run correctly on your folder structure but shows error for fmriprep docker
     
 done
