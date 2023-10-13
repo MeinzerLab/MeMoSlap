@@ -6,3 +6,4 @@ Some useful Instructions for:
 2. [BIDS validator](./instructions/bids_validator.md)
 3. [docker](./instructions/docker.md)
 4. [fmriprep](./instructions/fmriprep.md)
+5. [GitHub](./instructions/GitHub.md)
