@@ -45,7 +45,15 @@ fmriprep-docker <input-dir> <output-directory> \
 
 - [slice time correction](https://reproducibility.stanford.edu/slice-timing-correction-in-fmriprep-and-linear-modeling/)
 
-### for resting state (run fmri prep with AROMA)
+### for resting state (run fmriprep with AROMA)
+
+
+## Errors after fmriprep
+
+### Image look more distorted after fmriprep then before
+
+- [might be due to fieldmaps](https://neurostars.org/t/fmriprep-more-distorted-images-after-fmap-correction/23315/13)
+- try to run fmriprep without fieldmap by adding --use-syn-sdc to the [Greifswald/fmriprep.sh](../Greifswald/fmriprep.sh)
 
 ## Troubleshooting
 
