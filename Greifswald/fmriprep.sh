@@ -26,6 +26,7 @@ for sbj in "${sbjs[@]}"; do
     participant --participant-label "$sbj" \
     --n_cpus $cpus \
     --use-aroma \
+    --image "nipreps/fmriprep:23.0.2" # if multiple images are installed, the image to use can be specified here
     --no-submm-recon # BUG: otherwise recon all error,
     # NOTE: Instead of the --no-submm-recon flag we could also crop the FOV
     #--skip_bids_validation  # use if bids validator run correctly on your folder structure but shows error for fmriprep docker
