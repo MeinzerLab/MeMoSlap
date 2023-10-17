@@ -22,3 +22,5 @@ for sbj in "${sbjs[@]}"; do
     docker run -it --rm -v $bids_root_dir:/input:ro -v $bids_root_dir/derivatives/mriqc:/output nipreps/mriqc /input /output participant --participant-label sub-$sbj
     
 done
+
+docker run -it --rm -v $bids_root_di:/data:ro -v $bids_root_di/derivatives/mriqc:/out nipreps/mriqc /data /out group
