@@ -57,6 +57,23 @@ fmriprep-docker <input-dir> <output-directory> \
 
 ## Troubleshooting
 
+### field map corrections introduce errors
+
+There are [reports](https://github.com/nipreps/fmriprep/issues/3013) that the use of field maps introduces errors when using fmriprep.
+Right now there is a [offical fix](https://github.com/nipreps/sdcflows/pull/398), which may be tested or if you want to use ICA aroma, you can
+manually skullstrip the images as suggested [here](https://github.com/nipreps/fmriprep/issues/3013#issuecomment-1713517815).
+
+After [installing bidscoin](https://bidscoin.readthedocs.io/en/latest/installation.html), this can easily be done by:
+
+```bash
+BIDS_ROOT="path/to/bids"
+
+skullstrip $BIDS_ROOT fmap/*_magnitude1* -m fmap/*_phasediff* -o extra_data fmap
+
+echo "**/extra_data" >> "$BIDS_ROOT/.bidsignore"
+
+```
+
 ### freesurfer
 
 fmriprep depends on freesurfer [freesurfer install](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall)
@@ -157,7 +174,7 @@ which fmriprep-docker
 nano ~/.bashrc
 ```
 
-```txt
+```bash
 export PATH= (OUTPUT OF "which fmriprep-docker" without brackets):$PATH"
 ```
 
