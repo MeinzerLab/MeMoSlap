@@ -20,9 +20,7 @@ echo "${sbjs[@]}"
 
 for sbj in "${sbjs[@]}"; do
     
-    mkdir "$bids_root_dir/derivatives/fmriprep/$sbj"
-    
-    fmriprep-docker $bids_root_dir "$bids_root_dir/derivatives/fmriprep/$sbj" \
+    fmriprep-docker $bids_root_dir "$bids_root_dir/derivatives/fmriprep" \
     participant --participant-label "$sbj" \
     --n_cpus $cpus \
     --use-aroma \
